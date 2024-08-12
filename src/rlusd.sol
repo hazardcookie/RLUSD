@@ -1,7 +1,12 @@
-
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.26;
 
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20PausableUpgradeable.sol";
+import "./utils/AccountPausableUpgradeable.sol";
 
 /**
  * @dev The ERC20 implementation with features to pause accounts and contracts, upgrade the implementation
@@ -10,7 +15,7 @@ pragma solidity 0.8.26;
  *
  * @custom:security-contact bugs@ripple.com
  */
-contract StablecoinUpgradeable is Initializable, ERC20Upgradeable, UUPSUpgradeable, AccessControlUpgradeable,
+contract TestRLUSD is Initializable, ERC20Upgradeable, UUPSUpgradeable, AccessControlUpgradeable,
     ERC20PausableUpgradeable, AccountPausableUpgradeable {
 
     //keccak256("MINTER")
