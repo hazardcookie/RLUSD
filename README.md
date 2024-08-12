@@ -24,16 +24,16 @@ forge install
 
 ### Create a private key and fund it with testnet or real ETH
 
-[*] You can generate keys with foundry or use an existing keypair
-[*] [Foundry Create New Wallet Guide](https://book.getfoundry.sh/reference/cast/cast-wallet-new)
-[*] **Note:** Refer to the foundry documentation for more information on how to pass the private via Keystore instead of the command line. For brevity, all examples after this secution will manually pass keys via the command line, but this is not recommended for production use. Keystore is the recommended method for passing private keys to the foundry CLI in production.
+* You can generate keys with foundry or use an existing keypair
+* [Foundry Create New Wallet Guide](https://book.getfoundry.sh/reference/cast/cast-wallet-new)
+* **Note:** Refer to the foundry documentation for more information on how to pass the private via Keystore instead of the command line. For brevity, all examples after this secution will manually pass keys via the command line, but this is not recommended for production use. Keystore is the recommended method for passing private keys to the foundry CLI in production.
 
-[*] Create a new keypair without saving it to a keystore:
+* Create a new keypair without saving it to a keystore:
 ```
 cast wallet new
 ```
 
-[*] Create a new keypair and save it in the keystore directory:
+* Create a new keypair and save it in the keystore directory:
 ```
 cast wallet new keystore
 ```
@@ -48,8 +48,8 @@ ETHERSCAN_MAINNET_KEY=PRIVATE_KEY_GOES_HERE
 
 ## Cli Commands
 
-[*] **Note:** The following commands are passing private keys via the command line. This is not recommended for production use. Keystore is the recommended method for passing private keys to the foundry CLI in production.
-[*] **Note:** Keystore has it's own flag. You can pass the keystore flag to any command that requires a private key. [Forge Create Keystore](https://book.getfoundry.sh/reference/forge/forge-create#wallet-options---keystore)
+* **Note:** The following commands are passing private keys via the command line. This is not recommended for production use. Keystore is the recommended method for passing private keys to the foundry CLI in production.
+* **Note:** Keystore has it's own flag. You can pass the keystore flag to any command that requires a private key. [Forge Create Keystore](https://book.getfoundry.sh/reference/forge/forge-create#wallet-options---keystore)
 
 ### Contract Deployment - Mainnet
 ```
@@ -107,7 +107,7 @@ Transaction hash: 0x976bee9a36d2b6be8dd3f2e4c85969c1a88cc6136758a7f62b7372355947
 ```
 
 ### Verify Contract After Deployment Example - Sepolia Example
-[*] **Note:** The contract address is the address of the deployed contract.
+* **Note:** The contract address is the address of the deployed contract.
 ```
 forge verify-contract \
     --chain-id 11155111 \
